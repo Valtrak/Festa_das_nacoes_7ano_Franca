@@ -168,3 +168,11 @@ video {
         font-size: 1.3em;
     }
 }
+
+/* Estilo Global para Listas */
+li {
+    list-style-position: inside; /* Garantir que o marcador fique dentro do contêiner */
+    padding-left: 15px; /* Recuo para alinhar os itens */
+    margin-bottom: 10px; /* Espaçamento entre os itens da lista */
+    line-height: 1.5; /* Melhor legibilidade */
+}
