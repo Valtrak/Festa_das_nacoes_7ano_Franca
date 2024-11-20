@@ -18,7 +18,7 @@ body {
 /* Menu */
 .menu {
     display: flex;
-    justify-content: center; /* Alinha os itens na horizontal */
+    justify-content: center; /* Alinha os itens horizontalmente */
     align-items: center;
     height: 50px; /* Reduz a altura do menu */
     position: fixed;
@@ -29,32 +29,33 @@ body {
     z-index: 1000;
     padding: 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    overflow-x: auto; /* Permite rolagem horizontal caso necessário */
 }
 
 .menu ul {
-    display: flex; /* Mantém os itens na horizontal */
+    display: flex; /* Itens na horizontal */
     list-style: none;
     margin: 0;
     padding: 0;
     justify-content: center;
-    gap: 10px; /* Reduz o espaço entre os itens */
+    gap: 5px; /* Diminui o espaço entre os itens */
 }
 
 .menu li {
-    font-size: 12px; /* Reduz o tamanho da fonte */
+    font-size: 11px; /* Reduz o tamanho da fonte */
     white-space: nowrap; /* Impede quebra de linha nos itens */
 }
 
 .menu a {
     color: white;
     text-decoration: none;
-    padding: 5px 10px; /* Reduz o padding */
+    padding: 5px 8px; /* Reduz o padding dos links */
     transition: all 0.3s ease;
 }
 
 .menu a:hover {
     color: #ffcc00;
-    transform: scale(1.1);
+    transform: scale(1.1); /* Efeito no hover */
 }
 
 /* Conteúdo Principal */
